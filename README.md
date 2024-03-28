@@ -58,23 +58,21 @@ La sección Advanced aborda conceptos y tecnologías más complejas para desarro
 
 1. **Arquitectura MVVM (Model-View-ViewModel)**: Adoptar la arquitectura MVVM para separar claramente la lógica de presentación de la lógica de negocio y los datos. Utilizar bibliotecas como LiveData y ViewModel para implementar esta arquitectura de manera eficiente.
 
-2. **Jetpack Compose**: Utilizar Jetpack Compose, el nuevo kit de herramientas de UI declarativo de Android, para construir interfaces de usuario modernas y dinámicas de manera más eficiente y robusta que con XML tradicional.
 
-3. **Room Database**: Implementar una base de datos local utilizando Room, que es una capa de abstracción sobre SQLite. Aprender a definir entidades, DAOs (Data Access Objects) y utilizar consultas avanzadas para gestionar los datos de la aplicación de manera eficiente.
+2. **Room Database**: Implementar una base de datos local utilizando Room, que es una capa de abstracción sobre SQLite. Aprender a definir entidades, DAOs (Data Access Objects) y utilizar consultas avanzadas para gestionar los datos de la aplicación de manera eficiente.
 
-4. **Autenticación y autorización con Firebase**: Integrar Firebase Authentication para permitir que los usuarios inicien sesión en la aplicación de forma segura utilizando diferentes métodos de autenticación, como correo electrónico/contraseña, Google, Facebook, etc. Implementar reglas de seguridad personalizadas para controlar el acceso a los datos.
+3. **Autenticación y autorización con Firebase**: Integrar Firebase Authentication para permitir que los usuarios inicien sesión en la aplicación de forma segura utilizando diferentes métodos de autenticación, como correo electrónico/contraseña, Google, Facebook, etc. Implementar reglas de seguridad personalizadas para controlar el acceso a los datos.
 
-5. **Navegación entre pantallas**: Utilizar el componente Navigation de Jetpack para definir y gestionar la navegación entre diferentes pantallas de la aplicación de manera más coherente y estructurada.
 
-6. **Paginación**: Implementar la paginación para cargar grandes conjuntos de datos de manera eficiente, especialmente cuando se trabaja con listas largas o flujos de datos continuos, utilizando bibliotecas como Paging 3 de Jetpack.
+4. **Paginación**: Implementar la paginación para cargar grandes conjuntos de datos de manera eficiente, especialmente cuando se trabaja con listas largas o flujos de datos continuos, utilizando bibliotecas como Paging 3 de Jetpack.
 
-7. **Carga de imágenes con Glide o Coil**: Integrar bibliotecas como Glide o Coil para cargar y mostrar imágenes de manera eficiente en la aplicación, gestionando la memoria y la caché de manera óptima.
+5. **Carga de imágenes con Glide o Coil**: Integrar bibliotecas como Glide o Coil para cargar y mostrar imágenes de manera eficiente en la aplicación, gestionando la memoria y la caché de manera óptima.
 
-8. **Manejo avanzado de estados**: Implementar patrones avanzados para manejar y gestionar los estados de la aplicación de manera eficiente, como el uso de eventos y flujos de datos para propagar cambios en la interfaz de usuario de manera reactiva.
+6. **Manejo avanzado de estados**: Implementar patrones avanzados para manejar y gestionar los estados de la aplicación de manera eficiente, como el uso de eventos y flujos de datos para propagar cambios en la interfaz de usuario de manera reactiva.
 
-9. **Integración de APIs avanzadas**: Trabajar con APIs avanzadas que requieren autenticación, autorización y manejo de errores complejos. Utilizar bibliotecas como Retrofit para consumir y manejar datos de estas APIs de manera eficiente.
+7. **Integración de APIs avanzadas**: Trabajar con APIs avanzadas que requieren autenticación, autorización y manejo de errores complejos. Utilizar bibliotecas como Retrofit para consumir y manejar datos de estas APIs de manera eficiente.
 
-10. **Pruebas avanzadas y automatización de pruebas**: Implementar pruebas automatizadas más completas, como pruebas de integración, pruebas de interfaz de usuario y pruebas de rendimiento, utilizando herramientas como Espresso, UI Automator, Firebase Test Lab, etc.
+8.  **Pruebas avanzadas y automatización de pruebas**: Implementar pruebas automatizadas más completas, como pruebas de integración, pruebas de interfaz de usuario y pruebas de rendimiento, utilizando herramientas como Espresso, UI Automator, Firebase Test Lab, etc.
 
 ## Recursos Adicionales
 
