@@ -158,9 +158,8 @@ Por supuesto, aquí tienes algunos proyectos para la sección intermediate que a
 ### Conceptos:
 
 1. **Arquitectura MVVM**: Implementación de la arquitectura Model-View-ViewModel.
-2. **Jetpack Compose**: Construcción de la interfaz de usuario declarativa.
-3. **Room Database**: Utilizar una base de datos local con Room.
-4. **Autenticación y autorización con Firebase**: Implementar autenticación de usuario y control de acceso.
+2. **Room Database**: Utilizar una base de datos local con Room.
+3. **Autenticación y autorización con Firebase**: Implementar autenticación de usuario y control de acceso.
 
 ### Proyectos:
 
@@ -170,9 +169,9 @@ Por supuesto, aquí tienes algunos proyectos para la sección intermediate que a
    - **Recursos**: Puedes encontrar ejemplos de arquitecturas MVVM en Android en sitios como [GitHub](https://github.com/topics/android-mvvm) y tutoriales sobre Firebase Authentication en la [documentación oficial de Firebase](https://firebase.google.com/docs/auth/android/start).
 
 ### 2. E-commerce Marketplace App:
-   - **Descripción**: Una aplicación de comercio electrónico que permite a los usuarios comprar y vender productos. Utiliza Room Database para almacenar información de productos y usuarios, implementa Jetpack Compose para construir una interfaz de usuario dinámica, y carga imágenes de productos desde una API utilizando Glide o Coil.
-   - **Conceptos Practicados**: Room Database, Jetpack Compose, Carga de imágenes con Glide o Coil, Integración de APIs avanzadas, Paginación.
-   - **Recursos**: Puedes encontrar ejemplos de Jetpack Compose en la [documentación oficial de Android](https://developer.android.com/jetpack/compose) y tutoriales sobre Room Database en el [sitio web oficial de Android Developers](https://developer.android.com/training/data-storage/room).
+   - **Descripción**: Una aplicación de comercio electrónico que permite a los usuarios comprar y vender productos. Utiliza Room Database para almacenar información de productos y usuarios y carga imágenes de productos desde una API utilizando Glide o Coil.
+   - **Conceptos Practicados**: Room Database, Carga de imágenes con Glide o Coil, Integración de APIs avanzadas, Paginación.
+   - **Recursos**: Puedes encontrar tutoriales sobre Room Database en el [sitio web oficial de Android Developers](https://developer.android.com/training/data-storage/room).
 
 ### 3. Travel Journal App:
    - **Descripción**: Una aplicación que permite a los usuarios planificar viajes, guardar detalles de itinerarios y registrar experiencias de viaje. Utiliza Room Database para almacenar datos de viaje de manera estructurada, integra Google Maps para mostrar ubicaciones y rutas de viaje, y realiza pruebas avanzadas de rendimiento utilizando Firebase Test Lab.
@@ -191,15 +190,15 @@ Por supuesto, aquí tienes algunos proyectos para la sección intermediate que a
    - **Recursos**: Puedes encontrar ejemplos de integración de Firebase Authentication en la [documentación oficial de Firebase](https://firebase.google.com/docs/auth/android/start) y tutoriales sobre Retrofit en la [documentación oficial de Android](https://developer.android.com/training/data-storage/room).
 
 ### 6. Financial Management App:
-   - **Descripción**: Una aplicación para ayudar a los usuarios a gestionar sus finanzas personales. Utiliza Room Database para almacenar transacciones financieras y categorías de gastos, implementa Jetpack Compose para crear una interfaz de usuario moderna y dinámica, y utiliza notificaciones para recordatorios de pagos y seguimiento de gastos.
-   - **Conceptos Practicados**: Room Database, Jetpack Compose, Notificaciones, Arquitectura MVVM, Manejo avanzado de estados.
-   - **Recursos**: Puedes encontrar ejemplos de Jetpack Compose en la [documentación oficial de Android](https://developer.android.com/jetpack/compose) y tutoriales sobre Room Database en el [sitio web oficial de Android Developers](https://developer.android.com/training/data-storage/room).
+   - **Descripción**: Una aplicación para ayudar a los usuarios a gestionar sus finanzas personales. Utiliza Room Database para almacenar transacciones financieras y categorías de gastos, y utiliza notificaciones para recordatorios de pagos y seguimiento de gastos.
+   - **Conceptos Practicados**: Room Database, Notificaciones, Arquitectura MVVM, Manejo avanzado de estados.
+   - **Recursos**: Puedes encontrar tutoriales sobre Room Database en el [sitio web oficial de Android Developers](https://developer.android.com/training/data-storage/room).
 
 
 ### 7. Real-time Chat App:
-   - **Descripción**: Una aplicación de chat en tiempo real que permite a los usuarios comunicarse entre sí. Utiliza Firebase Authentication para la autenticación de usuarios, Firebase Realtime Database o Firestore para el almacenamiento y sincronización de mensajes en tiempo real, y Jetpack Compose para construir una interfaz de usuario moderna y dinámica.
-   - **Conceptos Practicados**: Autenticación y autorización con Firebase, Integración de Firebase Realtime Database o Firestore, Jetpack Compose, Arquitectura MVVM.
-   - **Recursos**: Puedes encontrar ejemplos de integración de Firebase en la [documentación oficial de Firebase](https://firebase.google.com/docs/android/setup) y tutoriales sobre Jetpack Compose en la [documentación oficial de Android](https://developer.android.com/jetpack/compose).
+   - **Descripción**: Una aplicación de chat en tiempo real que permite a los usuarios comunicarse entre sí. Utiliza Firebase Authentication para la autenticación de usuarios, Firebase Realtime Database o Firestore para el almacenamiento y sincronización de mensajes en tiempo real.
+   - **Conceptos Practicados**: Autenticación y autorización con Firebase, Integración de Firebase Realtime Database o Firestore, Arquitectura MVVM.
+   - **Recursos**: Puedes encontrar ejemplos de integración de Firebase en la [documentación oficial de Firebase](https://firebase.google.com/docs/android/setup).
 
 ### 8. Video Streaming App:
    - **Descripción**: Una aplicación que permite a los usuarios ver videos en streaming desde una plataforma online. Utiliza la arquitectura MVVM para gestionar la lógica de negocio y la interfaz de usuario de manera separada, integra Retrofit para consumir una API de streaming de video, y utiliza ExoPlayer para reproducir los videos de manera eficiente.
@@ -207,15 +206,15 @@ Por supuesto, aquí tienes algunos proyectos para la sección intermediate que a
    - **Recursos**: Puedes encontrar ejemplos de integración de ExoPlayer en la [documentación oficial de ExoPlayer](https://exoplayer.dev/hello-world.html) y tutoriales sobre Retrofit en la [documentación oficial de Android](https://developer.android.com/training/data-storage/room).
 
 ### 9. Remote Control App:
-   - **Descripción**: Una aplicación que permite a los usuarios controlar dispositivos electrónicos a distancia. Utiliza Firebase Authentication para la autenticación de usuarios, Firebase Realtime Database o Firestore para el intercambio de comandos en tiempo real, y Jetpack Compose para crear una interfaz de usuario intuitiva y atractiva.
-   - **Conceptos Practicados**: Autenticación y autorización con Firebase, Integración de Firebase Realtime Database o Firestore, Jetpack Compose, Arquitectura MVVM.
-   - **Recursos**: Puedes encontrar ejemplos de integración de Firebase en la [documentación oficial de Firebase](https://firebase.google.com/docs/android/setup) y tutoriales sobre Jetpack Compose en la [documentación oficial de Android](https://developer.android.com/jetpack/compose).
+   - **Descripción**: Una aplicación que permite a los usuarios controlar dispositivos electrónicos a distancia. Utiliza Firebase Authentication para la autenticación de usuarios, Firebase Realtime Database o Firestore para el intercambio de comandos en tiempo real.
+   - **Conceptos Practicados**: Autenticación y autorización con Firebase, Integración de Firebase Realtime Database o Firestore,Arquitectura MVVM.
+   - **Recursos**: Puedes encontrar ejemplos de integración de Firebase en la [documentación oficial de Firebase](https://firebase.google.com/docs/android/setup)
 
 
 ### 10. Music Player App with Offline Support:
-   - **Descripción**: Una aplicación de reproducción de música que permite a los usuarios reproducir canciones tanto en línea como fuera de línea. Utiliza Firebase Authentication para la autenticación de usuarios, Firebase Storage para almacenar archivos de música, y Jetpack Compose para diseñar una interfaz de usuario moderna y dinámica. Además, implementa Room Database para almacenar información sobre las canciones descargadas y las preferencias del usuario.
-   - **Conceptos Practicados**: Autenticación y autorización con Firebase, Integración de Firebase Storage para almacenamiento de archivos, Jetpack Compose, Room Database, Arquitectura MVVM.
-   - **Recursos**: Puedes encontrar ejemplos de integración de Firebase en la [documentación oficial de Firebase](https://firebase.google.com/docs/android/setup) y tutoriales sobre Jetpack Compose en la [documentación oficial de Android](https://developer.android.com/jetpack/compose).
+   - **Descripción**: Una aplicación de reproducción de música que permite a los usuarios reproducir canciones tanto en línea como fuera de línea. Utiliza Firebase Authentication para la autenticación de usuarios, Firebase Storage para almacenar archivos de música. Además, implementa Room Database para almacenar información sobre las canciones descargadas y las preferencias del usuario.
+   - **Conceptos Practicados**: Autenticación y autorización con Firebase, Integración de Firebase Storage para almacenamiento de archivos, Room Database, Arquitectura MVVM.
+   - **Recursos**: Puedes encontrar ejemplos de integración de Firebase en la [documentación oficial de Firebase](https://firebase.google.com/docs/android/setup)
 
 ### 11. Language Learning App with Speech Recognition:
    - **Descripción**: Una aplicación que ayuda a los usuarios a aprender nuevos idiomas utilizando reconocimiento de voz para practicar la pronunciación. Utiliza Firebase Authentication para gestionar la autenticación de usuarios, Firebase Realtime Database o Firestore para almacenar datos de usuarios y progreso de aprendizaje, y la API de reconocimiento de voz de Android para evaluar la pronunciación del usuario.
