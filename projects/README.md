@@ -1,4 +1,4 @@
-# Proyecto a desarrollar
+# Proyectos a desarrollar
 
 Este repositorio contiene una serie de proyectos organizados en tres secciones diferentes: Beginner, Intermediate y Advanced. Cada sección se enfoca en diferentes niveles de habilidad y profundiza en conceptos más avanzados de desarrollo de aplicaciones Android.
 
