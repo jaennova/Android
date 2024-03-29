@@ -89,7 +89,3 @@ Además de los ejemplos proporcionados en este repositorio, aquí hay algunos re
 ## Licencia
 
 Este repositorio está bajo la licencia [Apache](LICENSE).
-
----
-
-Este README proporciona una visión general del repositorio, los temas cubiertos en cada sección y algunos recursos adicionales para aprender más sobre el desarrollo de aplicaciones Android. Puedes personalizarlo según tus necesidades y agregar más detalles según sea necesario.
