@@ -8,18 +8,19 @@ Esta sección contiene recursos externos como imágenes, íconos, fuentes, datos
   - [aicolors](https://aicolors.co/)
   - [colormagic](https://colormagic.app/)
   - [bandmark](https://brandmark.io/color-wheel/app/)
+
+- Íconos
+
+  - [iconify](https://iconify.design/)
+  - Iconos de menús
+  - Iconos de acciones
+
 - Imágenes
 
   - Fondos
   - Ilustraciones
   - Fotos de perfil
   - Imágenes de muestra
-  
-- Íconos
-
-  - Iconos de barras de navegación
-  - Iconos de menús
-  - Iconos de acciones
   
 - Fuentes
 
