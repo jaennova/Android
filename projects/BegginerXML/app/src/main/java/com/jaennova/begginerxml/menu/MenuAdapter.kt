@@ -24,9 +24,7 @@ class MenuAdapter(private val context: Context, private val menuItems: List<Menu
         holder.bind(menuItem)
     }
 
-    override fun getItemCount(): Int {
-        return menuItems.size
-    }
+    override fun getItemCount() = menuItems.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
@@ -54,6 +52,5 @@ class MenuAdapter(private val context: Context, private val menuItems: List<Menu
             context.startActivity(intent)
         }
     }
-
 
 }
