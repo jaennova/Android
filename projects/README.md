@@ -20,15 +20,23 @@ Este repositorio contiene una serie de proyectos organizados en tres secciones d
 
 ### Proyectos:
 
-1. **ToDo List App**:
+1. IMC Calculator App:
+
+   - **Descripción**: Una aplicación que calcula el Índice de Masa Corporal (IMC) de un usuario basado en su peso y altura ingresados. Proporciona una forma rápida y fácil para que los usuarios evalúen su peso corporal y determinen si se encuentran en un rango saludable.
+
+   - **Conceptos Practicados**: Este proyecto te permite practicar el diseño de interfaces de usuario para formularios de entrada de datos, así como la lógica de cálculo del IMC. Además, puedes practicar la validación de entrada de datos para garantizar que los valores ingresados sean válidos antes de realizar el cálculo.
+
+   - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para aplicaciones de calculadora de IMC en sitios como Dribbble o en repositorios de código abierto en plataformas como GitHub. Además, puedes consultar recursos en línea sobre la fórmula y la interpretación del Índice de Masa Corporal para garantizar la precisión de la aplicación.
+
+2. **[ToDo List App](/projects/BegginerXML/app/src/main/java/com/jaennova/begginerxml/todolistapp/README.md)**:
 
    - **Descripción**: Una aplicación simple de lista de tareas que permite al usuario agregar, editar y eliminar tareas. Es una herramienta básica para organizar y gestionar tareas pendientes.
    
    - **Conceptos Practicados**: Este proyecto te permite practicar el uso de RecyclerView para mostrar una lista de tareas de manera eficiente y el almacenamiento de datos local utilizando SharedPreferences para guardar y recuperar las tareas del usuario.
 
-   - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para listas de tareas en sitios como [AndroidHive](https://www.androidhive.info/2017/09/android-recyclerview-swipe-delete-undo-using-itemtouchhelper/) o en repositorios de código abierto en plataformas como GitHub.
+   - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para listas de tareas en sitios en repositorios de código abierto en plataformas como GitHub.
 
-2. **Calculator App**:
+3. **Calculator App**:
 
    - **Descripción**: Una calculadora básica que realiza operaciones aritméticas simples. Es una herramienta útil para realizar cálculos básicos en dispositivos móviles.
    
@@ -36,28 +44,28 @@ Este repositorio contiene una serie de proyectos organizados en tres secciones d
 
    - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para calculadoras básicas en sitios de tutoriales como [Android Authority](https://www.androidauthority.com/simple-calculator-app-768654/) o en ejemplos disponibles en GitHub.
   
-3. Notepad App:
+4. Notepad App:
    - **Descripción**: Una aplicación simple para tomar notas que permite al usuario crear, editar y eliminar notas. Además, la aplicación puede incluir la capacidad de categorizar las notas y buscar entre ellas.
    - **Conceptos Practicados**: Layouts y Views para diseñar la interfaz de usuario de la pantalla de notas, Activities para representar las diferentes pantallas de la aplicación, RecyclerView para mostrar la lista de notas de manera eficiente y SharedPreferences para almacenar las notas localmente.
    - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para aplicaciones de toma de notas en sitios como [Dribbble](https://dribbble.com/tags/note_app) o [GitHub](https://github.com/topics/note-taking-app).
 
-4. Recipe Book App:
+5. Recipe Book App:
    - **Descripción**: Una aplicación que permite a los usuarios buscar, guardar y compartir recetas de cocina. Los usuarios pueden ver detalles de las recetas, guardar sus favoritas y compartirlas con amigos.
    - **Conceptos Practicados**: Layouts y Views para diseñar la interfaz de usuario de la pantalla de recetas, Activities para representar las diferentes pantallas de la aplicación, RecyclerView para mostrar la lista de recetas de manera eficiente, SharedPreferences para almacenar las recetas favoritas y la gestión de Intents para compartir recetas.
    - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para aplicaciones de libros de recetas en sitios como [Pinterest](https://www.pinterest.com/search/pins/?q=recipe%20app%20ui) o [Behance](https://www.behance.net/search/projects/?search=recipe%20app%20ui).
 
-5. Contact Manager App:
+6. Contact Manager App:
    - **Descripción**: Una aplicación que permite a los usuarios agregar, editar y eliminar contactos. Además, los usuarios pueden buscar contactos por nombre o número y organizarlos en grupos.
    - **Conceptos Practicados**: Layouts y Views para diseñar la interfaz de usuario de la pantalla de contactos, Activities para representar las diferentes pantallas de la aplicación, RecyclerView para mostrar la lista de contactos de manera eficiente, SharedPreferences para almacenar los contactos localmente y la gestión de Intents para agregar o editar contactos.
    - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para aplicaciones de gestión de contactos en sitios como [Dribbble](https://dribbble.com/tags/contact_manager_app) o [GitHub](https://github.com/topics/contact-manager-app).
 
-6. Task Manager App:
+7. Task Manager App:
    - **Descripción**: Una aplicación que permite a los usuarios organizar y realizar un seguimiento de sus tareas y proyectos. Los usuarios pueden crear listas de tareas, establecer recordatorios, establecer prioridades y colaborar en proyectos con otros usuarios.
     - **Conceptos Practicados**: Layouts y Views para diseñar la interfaz de usuario de la pantalla de tareas y listas de tareas, Activities para representar las diferentes pantallas de la aplicación, RecyclerView para mostrar la lista de tareas de manera eficiente, SharedPreferences para almacenar las listas de tareas localmente y la gestión de Intents para compartir tareas o listas de tareas.
 
     - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para aplicaciones de gestión de tareas en sitios como Dribbble o GitHub.
 
-7. Habit Tracker App:
+8. Habit Tracker App:
    - **Descripción**: Una aplicación que ayuda a los usuarios a realizar un seguimiento de sus hábitos diarios, establecer metas y recibir recordatorios. Los usuarios pueden registrar sus actividades diarias, ver su progreso a lo largo del tiempo y recibir notificaciones para mantenerse en camino.
    - **Conceptos Practicados**: Layouts y Views para diseñar la interfaz de usuario de la pantalla de hábitos y actividades, Activities para representar las diferentes pantallas de la aplicación, RecyclerView para mostrar la lista de hábitos y actividades de manera eficiente, SharedPreferences para almacenar los hábitos y actividades localmente y la gestión de Intents para establecer recordatorios.
     - **Recursos**: Puedes encontrar ejemplos de interfaces de usuario para aplicaciones de seguimiento de hábitos en sitios como Dribbble o GitHub.
