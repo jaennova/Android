@@ -79,7 +79,7 @@ Una aplicación simple de lista de tareas que permite al usuario agregar, editar
 
 <details>
 
-<summary>Codigo</summary>
+<summary>Codigo</summary>`
 
 ```xml
 <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:tint="#000000" android:viewportHeight="24" android:viewportWidth="24" android:width="24dp">
@@ -173,7 +173,7 @@ val listTasks = mutableListOf(
 ```
 </details>
 
-1. Diseña la interfaz de usuario para la actividad principal de tu aplicación utilizando el archivo `activity_todo.xml`. Puedes utilizar un `FrameLayout` como contenedor principal y agregar un `LinearLayout` para almacenar los elementos de la interfaz de usuario. Dentro del `LinearLayout`, agrega dos `TextView` para el título y el subtítulo, dos `RecyclerView` para las categorías y las tareas, y un `ExtendedFloatingActionButton` para agregar nuevas tareas.
+- Diseña la interfaz de usuario para la actividad principal de tu aplicación utilizando el archivo `activity_todo.xml`. Puedes utilizar un `FrameLayout` como contenedor principal y agregar un `LinearLayout` para almacenar los elementos de la interfaz de usuario. Dentro del `LinearLayout`, agrega dos `TextView` para el título y el subtítulo, dos `RecyclerView` para las categorías y las tareas, y un `ExtendedFloatingActionButton` para agregar nuevas tareas.
 
 <details>
 
@@ -250,7 +250,7 @@ val listTasks = mutableListOf(
 
 <br>
 
-6.  Crea un `Layout Resource File` para los elementos de la lista de tareas, `to_do_item_task.xml`. Utiliza un `CardView` como contenedor principal y agrega un `LinearLayout` para almacenar un `CheckBox` y un `TextView` para el nombre de la tarea.
+-  Crea un `Layout Resource File` para los elementos de la lista de tareas, `to_do_item_task.xml`. Utiliza un `CardView` como contenedor principal y agrega un `LinearLayout` para almacenar un `CheckBox` y un `TextView` para el nombre de la tarea.
 
 <details>
 
@@ -292,7 +292,7 @@ val listTasks = mutableListOf(
 
 <br>
 
-7.  Crea un `Layout Resource File` para el diálogo de agregar tareas, `to_do_dialog_task.xml`. Utiliza un `LinearLayout` como contenedor principal y agrega un `EditText` para el nombre de la tarea, un `RadioGroup` para las categorías y un botón para agregar la tarea.
+-  Crea un `Layout Resource File` para el diálogo de agregar tareas, `to_do_dialog_task.xml`. Utiliza un `LinearLayout` como contenedor principal y agrega un `EditText` para el nombre de la tarea, un `RadioGroup` para las categorías y un botón para agregar la tarea.
 
 <details>
 
@@ -373,7 +373,7 @@ val listTasks = mutableListOf(
 
 <br>
 
-8.  Crea un `Layout Resource File` para los elementos de las categorias, `to_do_item_task_category.xml`. Utiliza un `Card View` como contenedor principal y agrega un `Linear Layout` para almacenar un `Text View` para el nombre del la categoria y un `View` para una linea divisora.
+-  Crea un `Layout Resource File` para los elementos de las categorias, `to_do_item_task_category.xml`. Utiliza un `Card View` como contenedor principal y agrega un `Linear Layout` para almacenar un `Text View` para el nombre del la categoria y un `View` para una linea divisora.
 
 <details>
 
@@ -420,7 +420,7 @@ val listTasks = mutableListOf(
 
 <br>
 
-9.  Dentro del archivo `ToDoListActivity.kt` inicializa las vistas y los adaptadores para las categorías y las tareas, y configura los controladores de eventos para el botón de agregar tareas y los elementos de la lista de tareas.
+-   Dentro del archivo `ToDoListActivity.kt` inicializa las vistas y los adaptadores para las categorías y las tareas, y configura los controladores de eventos para el botón de agregar tareas y los elementos de la lista de tareas.
 
 <details>
 
@@ -519,7 +519,7 @@ class TaskViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 <br>
 
-13. Crea un archivo Kotlin para el controlador de vistas de las tareas, `CategoriesViewHolder.kt`. Este controlador de vistas debe extender la clase RecyclerView.ViewHolder e implementar los métodos necesarios para mostrar y manipular los elementos de la lista de categorias.
+-  Crea un archivo Kotlin para el controlador de vistas de las tareas, `CategoriesViewHolder.kt`. Este controlador de vistas debe extender la clase RecyclerView.ViewHolder e implementar los métodos necesarios para mostrar y manipular los elementos de la lista de categorias.
 
 <details>
 
@@ -810,3 +810,5 @@ Finalmente, agrega las funciones `onItemSelected` y `updateCategorires` a la fun
 ```
 
 </details>
+
+Ya solo debes instalar e iniciar la aplicacion para comprobar que se realizó correctamente.
