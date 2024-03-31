@@ -4,9 +4,9 @@ Una aplicación simple de lista de tareas que permite al usuario agregar, editar
 
 ## Paso a paso
 
-1. Buscar la UI que se desea implementar, con [dribbble](https://dribbble.com/shots/18579924-To-Do-List-app)
+-  Buscar la UI que se desea implementar, con [dribbble](https://dribbble.com/shots/18579924-To-Do-List-app)
 
-2. Creacion de la paleta de colore en `colors.xml` con ayuda de [aicolors](https://aicolors.co/)
+-  Creacion de la paleta de colore en `colors.xml` con ayuda de [aicolors](https://aicolors.co/)
 
 <details>
   <summary>Codigo</summary>
@@ -50,7 +50,7 @@ Una aplicación simple de lista de tareas que permite al usuario agregar, editar
 
 <br>
 
-3. Agrega los strings necesarios en el archivo `strings.xml` en la carperta de recursos
+-  Agrega los strings necesarios en el archivo `strings.xml` en la carperta de recursos
 
 <details>
   <summary>Codigo</summary>
@@ -75,20 +75,30 @@ Una aplicación simple de lista de tareas que permite al usuario agregar, editar
 
 <br>
 
-4. agregar los iconos a la carpeta drawable
-2. crear un nuevo theme en el archivo `themes.xml`para la app, agregarlo al android manifest
+- Agregar los iconos a la carpeta `drawable`, puedes hacerlo haciendo click dereco en esa carpeta despues en Vector Asset y ahi seleccionas el icono, en este caso, se elige el primero icono que aparece al buscar `add` y se le asigna el nombre de `ic_add_task`, tambien puedes agregarlo manualmente con este codigo
 
 <details>
 
 <summary>Codigo</summary>
 
 ```xml
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.BegginerXML" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:tint="#000000" android:viewportHeight="24" android:viewportWidth="24" android:width="24dp">
+      
+    <path android:fillColor="@android:color/white" android:pathData="M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+    
+</vector>
+
+```
+</details>
+
+
+-  Crear un nuevo theme en el archivo `themes.xml`para la app, agregarlo al android manifest
+
+<details>
+
+<summary>Codigo</summary>
+
+```xml
 
     <style name="Theme.ToDoApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -110,37 +120,11 @@ Una aplicación simple de lista de tareas que permite al usuario agregar, editar
         <item name="android:textColor">@color/todoTextSecondary</item>
         <item name="android:textSize">18sp</item>
     </style>
-
-    <style name="Theme.BegginerXML" parent="Theme.ToDoApp" />
-</resources>
-```
-</details>
-3. Crea un archivo `Task.kt` para definir una clase Task que represente una tarea en tu lista. Puedes incluir propiedades como title (título), description (descripción), isCompleted (estado de finalización) y priority (prioridad). Adicionalmente puedes crear un listado con las tareas, como ejemplo.
-
-<details>
-
-<summary>Codigo</summary>
-
-```kt
-package com.jaennova.begginerxml.todolistapp
-
-data class Task(
-    val name: String,
-    val category: TaskCategories,
-    var isSelected: Boolean = false
-)
-
-val listTasks = mutableListOf(
-    Task("Buy groceries", TaskCategories.Personal),
-    Task("Call mom", TaskCategories.Work, true),
-    Task("Buy milk", TaskCategories.Shopping),
-    Task("Learn Kotlin", TaskCategories.Learning),
-)
 ```
 </details>
 
 
-4. Crea un archivo `TaskCategories.kt` para definir una clase TaskCategories que represente una tarea en tu lista. Puedes incluir propiedades como Work (Trabajo), Learning (aprendiendo), Personal (personal) y Shopping (compras).
+-  Crea un archivo `TaskCategories.kt` para definir una clase TaskCategories que represente una tarea en tu lista. Puedes incluir propiedades como Work (Trabajo), Learning (aprendiendo), Personal (personal) y Shopping (compras).
 
 <details>
 
@@ -165,8 +149,31 @@ val listCategories = listOf(
 ```
 </details>
 
+- Crea un archivo `Task.kt` para definir una clase Task que represente una tarea en tu lista. Puedes incluir propiedades como title (título), description (descripción), isCompleted (estado de finalización) y priority (prioridad). Adicionalmente puedes crear un listado con las tareas, como ejemplo.
 
-5. Diseña la interfaz de usuario para la actividad principal de tu aplicación utilizando el archivo `activity_todo.xml`. Puedes utilizar un `FrameLayout` como contenedor principal y agregar un `LinearLayout` para almacenar los elementos de la interfaz de usuario. Dentro del `LinearLayout`, agrega dos `TextView` para el título y el subtítulo, dos `RecyclerView` para las categorías y las tareas, y un `ExtendedFloatingActionButton` para agregar nuevas tareas.
+<details>
+
+<summary>Codigo</summary>
+
+```kt
+package com.jaennova.begginerxml.todolistapp
+
+data class Task(
+    val name: String,
+    val category: TaskCategories,
+    var isSelected: Boolean = false
+)
+
+val listTasks = mutableListOf(
+    Task("Buy groceries", TaskCategories.Personal),
+    Task("Call mom", TaskCategories.Work, true),
+    Task("Buy milk", TaskCategories.Shopping),
+    Task("Learn Kotlin", TaskCategories.Learning),
+)
+```
+</details>
+
+1. Diseña la interfaz de usuario para la actividad principal de tu aplicación utilizando el archivo `activity_todo.xml`. Puedes utilizar un `FrameLayout` como contenedor principal y agregar un `LinearLayout` para almacenar los elementos de la interfaz de usuario. Dentro del `LinearLayout`, agrega dos `TextView` para el título y el subtítulo, dos `RecyclerView` para las categorías y las tareas, y un `ExtendedFloatingActionButton` para agregar nuevas tareas.
 
 <details>
 
@@ -178,6 +185,7 @@ val listCategories = listOf(
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:context=".MainActivity"
     android:layout_height="match_parent">
 
 
@@ -186,8 +194,7 @@ val listCategories = listOf(
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/todoBackgroundPrimary"
-        android:orientation="vertical"
-        tools:context=".todolistapp.ToDoListActivity">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -243,7 +250,7 @@ val listCategories = listOf(
 
 <br>
 
-6.  Crea un `Layout Resource File` para los elementos de la lista de tareas, `todo_item_task.xml`. Utiliza un `CardView` como contenedor principal y agrega un `LinearLayout` para almacenar un `CheckBox` y un `TextView` para el nombre de la tarea.
+6.  Crea un `Layout Resource File` para los elementos de la lista de tareas, `to_do_item_task.xml`. Utiliza un `CardView` como contenedor principal y agrega un `LinearLayout` para almacenar un `CheckBox` y un `TextView` para el nombre de la tarea.
 
 <details>
 
@@ -285,7 +292,7 @@ val listCategories = listOf(
 
 <br>
 
-7.  Crea un `Layout Resource File` para el diálogo de agregar tareas, `todo_dialog_task.xml`. Utiliza un `LinearLayout` como contenedor principal y agrega un `EditText` para el nombre de la tarea, un `RadioGroup` para las categorías y un botón para agregar la tarea.
+7.  Crea un `Layout Resource File` para el diálogo de agregar tareas, `to_do_dialog_task.xml`. Utiliza un `LinearLayout` como contenedor principal y agrega un `EditText` para el nombre de la tarea, un `RadioGroup` para las categorías y un botón para agregar la tarea.
 
 <details>
 
@@ -413,29 +420,42 @@ val listCategories = listOf(
 
 <br>
 
-9.  Dentro del archivo `TodoActivity.kt` inicializa las vistas y los adaptadores para las categorías y las tareas, y configura los controladores de eventos para el botón de agregar tareas y los elementos de la lista de tareas.
+9.  Dentro del archivo `ToDoListActivity.kt` inicializa las vistas y los adaptadores para las categorías y las tareas, y configura los controladores de eventos para el botón de agregar tareas y los elementos de la lista de tareas.
 
 <details>
 
 <summary>Codigo</summary>
 
 ```kt
+package com.jaennova.begginerxml.todolistapp
 
-// Inicializacion de variables
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
+class ToDoListActivity : AppCompatActivity() {
+    // Inicializacion de variables
     private lateinit var rvCategories: RecyclerView
     private lateinit var rvTasks: RecyclerView
     private lateinit var fabAddTask: ExtendedFloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_to_do_list)
         initComponents()
         initUI()
         initListeners()
     }
-     private fun initListeners() {
-        fabAddTask.setOnClickListener {  } //se crea despues
+
+    private fun initListeners() {
+        fabAddTask.setOnClickListener { } //se crea despues
     }
+
     private fun initComponents() {
         rvCategories = findViewById(R.id.rvCategories)
         rvTasks = findViewById(R.id.rvTasks)
@@ -443,91 +463,15 @@ val listCategories = listOf(
     }
 
     private fun initUI() {
-        categoriesAdapter =
-            CategoriesAdapter(listCategories) { position -> updateCategories(position) }
-        rvCategories.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rvCategories.adapter = categoriesAdapter
-
-        taskAdapter = TaskAdapter(listTasks) { position -> onItemSelected(position) }
-        rvTasks.layoutManager = LinearLayoutManager(this)
-        rvTasks.adapter = taskAdapter
+        // se crea despues
     }
-```
-</details>
-
-<br>
-
-10. Crea un archivo Kotlin para el adaptador de las categorías, `CategoriesAdapter.kt`. Este adaptador debe extender la clase RecyclerView.Adapter e implementar los métodos necesarios para mostrar las categorías en la lista.
-
-<details>
-
-<summary>Codigo</summary>
-
-```kt
-package com.jaennova.begginerxml.todolistapp
-
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.jaennova.begginerxml.R
-
-class CategoriesAdapter(private val categories: List<TaskCategories>,  private val onItemSelected:(Int) -> Unit) :
-    RecyclerView.Adapter<CategoriesViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.to_do_item_task_category, parent, false)
-        return CategoriesViewHolder(view)
-    }
-
-
-    override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
-        holder.render(categories[position],onItemSelected)
-    }
-
-    override fun getItemCount() = categories.size
 }
 ```
 </details>
 
 <br>
 
-11. Crea un archivo Kotlin para el adaptador de las tareas, `TasksAdapter.kt`. Este adaptador debe extender la clase RecyclerView.Adapter e implementar los métodos necesarios para mostrar las tareas en la lista.
-
-<details>
-
-<summary>Codigo</summary>
-
-```kt
-package com.jaennova.begginerxml.todolistapp
-
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.jaennova.begginerxml.R
-
-class TaskAdapter(var task: List<Task>, private val onTaskSelected: (Int) -> Unit) :
-    RecyclerView.Adapter<TaskViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.to_do_item_task, parent, false)
-        return TaskViewHolder(view)
-    }
-
-
-    override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
-        holder.render(task[position])
-        holder.itemView.setOnClickListener { onTaskSelected(position) }
-    }
-
-    override fun getItemCount() = task.size
-}
-```
-</details>
-
-<br>
-
-12. Crea un archivo Kotlin para el controlador de vistas de las tareas, `TasksViewHolder.kt`. Este controlador de vistas debe extender la clase RecyclerView.ViewHolder e implementar los métodos necesarios para mostrar y manipular los elementos de la lista de tareas.
+-  Crea un archivo Kotlin para el controlador de vistas de las tareas, `TasksViewHolder.kt`. Este controlador de vistas debe extender la clase RecyclerView.ViewHolder e implementar los métodos necesarios para mostrar y manipular los elementos de la lista de tareas.
 
 <details>
 
@@ -640,8 +584,174 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 <br>
 
 
-14.  Crea una funcion para la creacion del dialog para usarse en la accion del FAB.
+-  Crea un archivo Kotlin para el adaptador de las categorías, `CategoriesAdapter.kt`. Este adaptador debe extender la clase RecyclerView.Adapter e implementar los métodos necesarios para mostrar las categorías en la lista.
+
+<details>
+
+<summary>Codigo</summary>
+
+```kt
+package com.jaennova.begginerxml.todolistapp
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.jaennova.begginerxml.R
+
+class CategoriesAdapter(private val categories: List<TaskCategories>,  private val onItemSelected:(Int) -> Unit) :
+    RecyclerView.Adapter<CategoriesViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.to_do_item_task_category, parent, false)
+        return CategoriesViewHolder(view)
+    }
+
+
+    override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
+        holder.render(categories[position],onItemSelected)
+    }
+
+    override fun getItemCount() = categories.size
+}
+```
+</details>
+
+<br>
+
+-  Crea un archivo Kotlin para el adaptador de las tareas, `TasksAdapter.kt`. Este adaptador debe extender la clase RecyclerView.Adapter e implementar los métodos necesarios para mostrar las tareas en la lista.
+
+<details>
+
+<summary>Codigo</summary>
+
+```kt
+package com.jaennova.begginerxml.todolistapp
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.jaennova.begginerxml.R
+
+class TaskAdapter(var task: List<Task>, private val onTaskSelected: (Int) -> Unit) :
+    RecyclerView.Adapter<TaskViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.to_do_item_task, parent, false)
+        return TaskViewHolder(view)
+    }
+
+
+    override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
+        holder.render(task[position])
+        holder.itemView.setOnClickListener { onTaskSelected(position) }
+    }
+
+    override fun getItemCount() = task.size
+}
+```
+</details>
+
+<br>
+
+- Crea las variables para inicializar los adapters, al inicio de la clase de `ToDoListActivity`
+
+<details>
+
+<summary>Codigo</summary>
+
+```kt
+    // inicializa los adapters
+    private lateinit var categoriesAdapter: CategoriesAdapter
+    private lateinit var taskAdapter: TaskAdapter
+
+```
+
+</details>
+
+<br>
+
+-  Dentro de la clase `ToDoListActivity` Crea una funcion al final de la clase para la creacion del dialog para usarse en la accion del FAB.
      
+<details>
+
+<summary>Codigo</summary>
+
+```kt
+    private fun showDialog() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.to_do_dialog_task)
+        val btnAddTask = dialog.findViewById<Button>(R.id.btnAddTask)
+        val etTask = dialog.findViewById<EditText>(R.id.etTask)
+        val rgCategories = dialog.findViewById<RadioGroup>(R.id.rgCategories)
+
+        btnAddTask.setOnClickListener {
+            val currentTask = etTask.text.toString()
+            if (currentTask.isNotEmpty()) {
+
+                val selectedId = rgCategories.checkedRadioButtonId
+                val selectedRadioButton: RadioButton = rgCategories.findViewById(selectedId)
+                val currentCategory: TaskCategories = when (selectedRadioButton.text) {
+                    "Trabajo" -> Work
+                    "Aprendiendo" -> Learning
+                    "Compras" -> Shopping
+                    else -> Personal
+                }
+                listTasks.add(Task(currentTask, currentCategory))
+                dialog.hide()
+            }
+        }
+        dialog.show()
+    }
+```
+</details>
+<br>
+posteriormente agrega la funcion a la accion del FAB.
+
+<details>
+
+<summary>Accion FAB</summary>
+
+```kt
+ fabAddTask.setOnClickListener { showDialog() }
+```
+</details>
+
+<br>
+
+
+
+-   Tambien debes crear las funciones `onItemSelected`, `updateCategories`, `UpdateTasks` al final de la misma clase, para actualizar los recyclers views al hacer un cambio
+
+<details>
+
+<summary>Codigo</summary>
+
+```kt
+    private fun onItemSelected(position: Int) {
+        listTasks[position].isSelected = !listTasks[position].isSelected
+        updateTasks()
+    }
+
+    private fun updateCategories(position: Int) {
+        listCategories[position].isSelected = !listCategories[position].isSelected
+        categoriesAdapter.notifyItemChanged(position)
+        updateTasks()
+    }
+
+    private fun updateTasks() {
+        val selectedCategories: List<TaskCategories> = listCategories.filter { it.isSelected }
+        val newTasks = listTasks.filter { selectedCategories.contains(it.category) }
+        taskAdapter.task = newTasks
+        taskAdapter.notifyDataSetChanged()
+    }
+```
+</details>
+
+<br>
+
+Tambien debes agregar la funcion `updateTasks` a la funcion `showDialog`
+
+
 <details>
 
 <summary>Codigo</summary>
@@ -674,47 +784,29 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         dialog.show()
     }
 ```
-</details>
-<br>
-posteriormente agrega la funcion a la accion del FAB.
 
-<details>
-
-<summary>Accion FAB</summary>
-
-```kt
- fabAddTask.setOnClickListener { showDialog() }
-```
 </details>
 
 <br>
 
-
-15. Crea las funciones `onItemSelected`, `updateCategories`, `UpdateTasks` para actualizar los recyclers views al hacer un cambio
+Finalmente, agrega las funciones `onItemSelected` y `updateCategorires` a la funcion `initUI`
 
 <details>
 
 <summary>Codigo</summary>
 
 ```kt
-    private fun onItemSelected(position: Int) {
-        listTasks[position].isSelected = !listTasks[position].isSelected
-        updateTasks()
-    }
+    private fun initUI() {
+        categoriesAdapter =
+            CategoriesAdapter(listCategories) { position -> updateCategories(position) }
+        rvCategories.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvCategories.adapter = categoriesAdapter
 
-    private fun updateCategories(position: Int) {
-        listCategories[position].isSelected = !listCategories[position].isSelected
-        categoriesAdapter.notifyItemChanged(position)
-        updateTasks()
-    }
-
-    private fun updateTasks() {
-        val selectedCategories: List<TaskCategories> = listCategories.filter { it.isSelected }
-        val newTasks = listTasks.filter { selectedCategories.contains(it.category) }
-        taskAdapter.task = newTasks
-        taskAdapter.notifyDataSetChanged()
+        taskAdapter = TaskAdapter(listTasks) { position -> onItemSelected(position) }
+        rvTasks.layoutManager = LinearLayoutManager(this)
+        rvTasks.adapter = taskAdapter
     }
 ```
-</details>
 
-<br>
+</details>
