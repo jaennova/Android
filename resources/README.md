@@ -19,6 +19,7 @@ Esta sección contiene recursos externos como imágenes, íconos, fuentes, datos
 - Íconos
 
   - [iconify](https://iconify.design/)
+  - [inloop](https://inloop.github.io/svg2android/)
   - Iconos de menús
   - Iconos de acciones
 
