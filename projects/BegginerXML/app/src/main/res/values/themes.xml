@@ -4,12 +4,12 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
+    <!--ToDoApp-->
     <style name="Theme.ToDoApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/todoPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryVariant">@color/todoColorPrimaryLight</item>
         <item name="colorOnPrimary">@color/todoPrimaryDark</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/todoBackgroundSecondary</item>
@@ -24,6 +24,20 @@
         <item name="android:layout_marginHorizontal">32dp</item>
         <item name="android:textColor">@color/todoTextSecondary</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.BMIApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bmi_colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/bmi_colorPrimaryLight</item>
+        <item name="colorOnPrimary">@color/bmi_colorPrimaryDark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bmi_colorBackgroundSecondary</item>
+        <item name="colorSecondaryVariant">@color/bmi_colorTextSecondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/bmi_colorBackgroundPrimary</item>
+        <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.BegginerXML" parent="Theme.ToDoApp" />

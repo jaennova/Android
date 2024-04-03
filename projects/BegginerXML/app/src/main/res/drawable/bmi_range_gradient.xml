@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="@color/bmi_colorUnderweight"
+        android:centerColor="@color/bmi_colorNormal"
+        android:centerX="0.25"
+        android:centerY="0.5"
+        android:endColor="@color/bmi_colorOverweight"
+        android:endX="0.75"
+        android:gradientRadius="100%"
+        android:type="linear"
+        />
+</shape>
