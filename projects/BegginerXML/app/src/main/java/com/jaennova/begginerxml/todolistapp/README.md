@@ -2,6 +2,7 @@
 
 Una aplicación simple de lista de tareas que permite al usuario agregar, editar y eliminar tareas. Es una herramienta básica para organizar y gestionar tareas pendientes.
 
+![todoapp](/projects/screens/screens_todoapp.png)
 ## Paso a paso
 
 -  Buscar la UI que se desea implementar, con [dribbble](https://dribbble.com/shots/18579924-To-Do-List-app)

@@ -25,7 +25,7 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         itemView.setOnClickListener { onItemSelected(layoutPosition) }
         when (category) {
             TaskCategories.Work -> {
-                tvCategoryName.text = "Work"
+                tvCategoryName.text = "Trabajo"
                 divider.setBackgroundResource(R.color.todo_work)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_work))
             }
@@ -37,13 +37,13 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             }
 
             TaskCategories.Shopping -> {
-                tvCategoryName.text = "Shopping"
+                tvCategoryName.text = "Compras"
                 divider.setBackgroundResource(R.color.todo_shopping)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_shopping))
             }
 
             TaskCategories.Learning -> {
-                tvCategoryName.text = "Learning"
+                tvCategoryName.text = "Aprender"
                 divider.setBackgroundResource(R.color.todo_learning)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_learning))
             }

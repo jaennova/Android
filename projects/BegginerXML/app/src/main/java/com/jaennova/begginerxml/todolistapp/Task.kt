@@ -7,8 +7,8 @@ data class Task(
 )
 
 val listTasks = mutableListOf(
-    Task("Buy groceries", TaskCategories.Personal),
-    Task("Call mom", TaskCategories.Work, true),
-    Task("Buy milk", TaskCategories.Shopping),
-    Task("Learn Kotlin", TaskCategories.Learning),
+    Task("Comprar medicna", TaskCategories.Personal),
+    Task("Llamar a mamá", TaskCategories.Work, true),
+    Task("Comprar leche", TaskCategories.Shopping),
+    Task("Aprender Kotlin", TaskCategories.Learning),
 )
