@@ -12,9 +12,6 @@ import com.jaennova.begginerxml.R
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var menuAdapter: MenuAdapter
-    private val menuItems = listOf(
-        MenuItem("Todo List", R.drawable.ic_launcher_foreground, "Aplicación simple de lista de tareas"),
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
