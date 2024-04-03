@@ -27,7 +27,7 @@
         android:layout_marginStart="8dp"
         android:text="@string/bmi_app_title"
         android:textStyle="italic"
-        android:textColor="@color/todoBackgroundTertiary"
+        android:textColor="@color/bmi_colorBackgroundTertiary"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="@id/viewMale"
         app:layout_constraintStart_toEndOf="@id/ivLogo"
@@ -137,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="120 cm"
-                android:textColor="@color/todoBackgroundTertiary"
+                android:textColor="@color/bmi_colorPrimaryDark"
                 android:textSize="38sp"
                 android:textStyle="bold" />
 
@@ -279,7 +279,7 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/bmi_colorTextSecondary"
         android:text="@string/bmi_calculate"
-        android:textColor="@color/todoTextPrimary"
+        android:textColor="@color/bmi_colorBackgroundTertiary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

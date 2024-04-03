@@ -49,7 +49,6 @@
     Dieta y Nutrición\nEstablece Metas Realistas:\n\t•\tFija objetivos alcanzables y a corto plazo para mejorar tu salud.\n\t•\tAdopta un enfoque gradual para realizar cambios en tus hábitos alimenticios y estilo de vida.\n\t•\tBusca apoyo de amigos, familiares o un profesional de la salud para mantenerte motivado.\nPrioriza la Calidad de los Alimentos:\n\t•\tElige alimentos integrales y frescos en lugar de opciones procesadas y ricas en calorías.
 </string>
 
-
     <!-- Errores de recomendaciones -->
     <string name="bmi_error_recommendation_unknown">Error: Recomendación desconocida</string>
     <string name="bmi_recommendation_title">Recomendacion</string>

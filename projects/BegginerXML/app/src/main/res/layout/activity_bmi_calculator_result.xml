@@ -51,7 +51,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvBMIResulMini"
+                android:id="@+id/tvBMIResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bmi_initial_height"
-                android:textColor="@color/todoBackgroundSecondary"
+                android:textColor="@color/bmi_colorTextSecondary"
                 android:textSize="38sp"
                 android:textStyle="bold" />
 
@@ -117,7 +117,7 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/bmi_colorTextSecondary"
         android:text="@string/bmi_recalculate"
-        android:textColor="@color/todoTextPrimary"
+        android:textColor="@color/bmi_colorBackgroundTertiary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

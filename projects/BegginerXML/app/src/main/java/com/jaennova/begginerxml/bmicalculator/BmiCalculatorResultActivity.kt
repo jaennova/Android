@@ -5,7 +5,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat
 import com.google.android.material.slider.RangeSlider
 import com.jaennova.begginerxml.R
 import com.jaennova.begginerxml.bmicalculator.BMICalculatorActivity.Companion.IMC_KEY
@@ -13,7 +12,7 @@ import kotlin.math.roundToInt
 
 class BmiCalculatorResultActivity : AppCompatActivity() {
 
-    private lateinit var tvResultMini: TextView
+    private lateinit var tvResult: TextView
     private lateinit var tvIMC: TextView
     private lateinit var tvDescription: TextView
     private lateinit var btnRecalculate: Button
@@ -31,7 +30,7 @@ class BmiCalculatorResultActivity : AppCompatActivity() {
 
     private fun initComponents() {
         tvIMC = findViewById(R.id.tvBMI)
-        tvResultMini = findViewById(R.id.tvBMIResulMini)
+        tvResult = findViewById(R.id.tvBMIResult)
         tvDescription = findViewById(R.id.tvBMIResulDetail)
         btnRecalculate = findViewById(R.id.btnRecalculate)
         viewRecommendation = findViewById(R.id.viewRecomendation)
@@ -45,11 +44,11 @@ class BmiCalculatorResultActivity : AppCompatActivity() {
 
         val resultIMC = result.toFloat()
         configureRangeSlider(resultIMC)
-        setRecommendation(result)
+        setResultBmi(result)
     }
 
     private fun initListeners() {
-        btnRecalculate.setOnClickListener { onBackPressedDispatcher }
+        btnRecalculate.setOnClickListener { onBackPressed() }
     }
 
     private fun configureRangeSlider(resultIMC: Float) {
@@ -64,27 +63,14 @@ class BmiCalculatorResultActivity : AppCompatActivity() {
         rsBMIResult.values = listOf(rsSetValue)
     }
 
-    private fun setRecommendation(result: Double) {
-        val color = getRecommendationColor(result)
-        val recommendationTextResId = getRecommendationTextResId(result)
-        val descriptionTextResId = getRecommendationDescriptionTextResId(result)
-
-//        viewRecommendation.setCardBackgroundColor(ContextCompat.getColor(this, color))
-        tvResultMini.text = getString(recommendationTextResId)
+    private fun setResultBmi(result: Double) {
+        val recommendationTextResId = getTitleResult(result)
+        val descriptionTextResId = getDescriptionResult(result)
+        tvResult.text = getString(recommendationTextResId)
         tvDescription.text = getString(descriptionTextResId)
     }
 
-    private fun getRecommendationColor(result: Double): Int {
-        return when (result) {
-            in 0.00..18.50 -> R.color.bmi_colorUnderweight
-            in 18.51..24.99 -> R.color.bmi_colorNormal
-            in 25.00..29.99 -> R.color.bmi_colorOverweight
-            in 30.00..99.00 -> R.color.bmi_colorObesity
-            else -> R.color.bmi_colorError
-        }
-    }
-
-    private fun getRecommendationTextResId(result: Double): Int {
+    private fun getTitleResult(result: Double): Int {
         return when (result) {
             in 0.00..18.50 -> R.string.bmi_underweight
             in 18.51..24.99 -> R.string.bmi_normal
@@ -94,7 +80,7 @@ class BmiCalculatorResultActivity : AppCompatActivity() {
         }
     }
 
-    private fun getRecommendationDescriptionTextResId(result: Double): Int {
+    private fun getDescriptionResult(result: Double): Int {
         return when (result) {
             in 0.00..18.50 -> R.string.bmi_underweight_recomendation
             in 18.51..24.99 -> R.string.bmi_normal_recomendation
