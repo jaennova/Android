@@ -20,7 +20,7 @@ Este repositorio contiene una serie de proyectos organizados en tres secciones d
 
 ### Proyectos:
 
-1. IMC Calculator App:
+1. [IMC Calculator App](/projects/BegginerXML/app/src/main/java/com/jaennova/begginerxml/bmicalculator/README.md):
 
    - **Descripción**: Una aplicación que calcula el Índice de Masa Corporal (IMC) de un usuario basado en su peso y altura ingresados. Proporciona una forma rápida y fácil para que los usuarios evalúen su peso corporal y determinen si se encuentran en un rango saludable.
 
