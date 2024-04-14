@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BegginerXML</string>
+    <string name="app_name">Principiante XML</string>
 
     <!--To Do App-->
     <string name="todo_app_title">To Do List</string>
@@ -15,9 +15,9 @@
 
     <!--BMI Calculator-->
     <string name="bmi_app_title">BMI Calculator</string>
-    <string name="female">Mujer</string>
-    <string name="male">Hombre</string>
-    <string name="bmi_height">Altura</string>
+    <string name="bmi_female">Mujer</string>
+    <string name="bmi_male">Hombre</string>
+    <string name="bmi_height">Altura</string>   
     <string name="bmi_initial_height">120 cm</string>
     <string name="bmi_weight">Peso</string>
     <string name="bmi_age">Edad</string>

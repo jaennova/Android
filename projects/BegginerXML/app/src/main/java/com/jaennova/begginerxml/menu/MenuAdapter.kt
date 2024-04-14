@@ -28,9 +28,9 @@ class MenuAdapter(private val context: Context, private val menuItems: List<Menu
     override fun getItemCount() = menuItems.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
-        private val iconImageView: ImageView = itemView.findViewById(R.id.iconImageView)
-        private val descriptionTextView: TextView = itemView.findViewById(R.id.descriptionTextView)
+        private val titleTextView: TextView = itemView.findViewById(R.id.tvTitleApp)
+        private val iconImageView: ImageView = itemView.findViewById(R.id.ivIconApp)
+        private val descriptionTextView: TextView = itemView.findViewById(R.id.tvDescriptionApp)
 
         fun bind(menuItem: MenuItem) {
             titleTextView.text = menuItem.title

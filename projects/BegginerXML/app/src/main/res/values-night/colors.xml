@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Menu background -->
-    <color name="menu_background_primary">#F2F5F6</color>
-    <color name="menu_text_text_primary">#1d1c1c</color>
-    <color name="menu_text_text_secondary">#313d44</color>
-    <color name="menu_backgroundSecondary">#E4D6D6</color>
+    <color name="menu_background_primary">#3b3c3d</color>
+    <color name="menu_text_text_primary">#cccbc8</color>
+    <color name="menu_text_text_secondary">#EAEFF1</color>
+    <color name="menu_backgroundSecondary">#1d1c1c</color>
 
+    <!--To Do App-->
+    <!-- Colores primarios -->
     <color name="todoPrimary">#0085ff</color>
     <color name="todoPrimaryDark">#5a85ae</color>
     <color name="todoColorPrimaryLight">#e0ffff</color>
@@ -13,21 +15,22 @@
     <color name="todoAccent">#006fff</color>
     <color name="todoAccentLight">#e1ffff</color>
     <!-- Colores de texto -->
-    <color name="todoTextPrimary">#000000</color>
-    <color name="todoTextSecondary">#616161</color>
+    <color name="todoTextPrimary">#FFFFFF</color>
+    <color name="todoTextSecondary">#9e9e9e</color>
     <!-- Colores de fondo -->
-    <color name="todoBackgroundPrimary">#FFFFFF</color>
-    <color name="todoBackgroundSecondary">#F5F5F5</color>
-    <color name="todoBackgroundTertiary">#EEEEEE</color>
+    <color name="todoBackgroundPrimary">#1E1E1E</color>
+    <color name="todoBackgroundSecondary">#2d2d2d</color>
+    <color name="todoBackgroundTertiary">#454545</color>
     <!--    Colores de categorias-->
     <color name="todo_personal">#4e86c6</color>
     <color name="todo_learning">#8f6dab</color>
     <color name="todo_work">#5da894</color>
     <color name="todo_shopping">#e56c70</color>
-    <color name="todo_personal_selected">#0c1a2a</color>
-    <color name="todo_learning_selected">#2d1e2a</color>
-    <color name="todo_work_selected">#0e1e17</color>
-    <color name="todo_shopping_selected">#421b1c</color>
+    <color name="todo_personal_selected">#E0E0E0</color>
+    <color name="todo_learning_selected">#E0E0E0</color>
+    <color name="todo_work_selected">#E0E0E0</color>
+    <color name="todo_shopping_selected">#E0E0E0</color>
+
 
     <!--BMI Calculator-->
     <!-- Colores primarios -->
@@ -38,12 +41,12 @@
     <color name="bmi_colorAccent">#FF4081</color>
     <color name="bmi_colorAccentLight">#ffe4ff</color>
     <!-- Colores de texto -->
-    <color name="bmi_colorTextPrimary">#333333</color>
-    <color name="bmi_colorTextSecondary">#5c5c5c</color>
+    <color name="bmi_colorTextPrimary">#FFFFFF</color>
+    <color name="bmi_colorTextSecondary">#CCCCCC</color>
     <!-- Colores de fondo -->
-    <color name="bmi_colorBackgroundPrimary">#F4F4F4</color>
-    <color name="bmi_colorBackgroundSecondary">#eaeaea</color>
-    <color name="bmi_colorBackgroundTertiary">#c1c1c1</color>
+    <color name="bmi_colorBackgroundPrimary">#333333</color>
+    <color name="bmi_colorBackgroundSecondary">#2C2C2C</color>
+    <color name="bmi_colorBackgroundTertiary">#1A1A1A</color>
 
     <!--    Setting-->
     <color name="settings_text_title">#000000</color>

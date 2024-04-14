@@ -27,7 +27,7 @@
         android:layout_marginStart="8dp"
         android:text="@string/bmi_app_title"
         android:textStyle="italic"
-        android:textColor="@color/bmi_colorBackgroundTertiary"
+        android:textColor="@color/bmi_colorTextPrimary"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="@id/viewMale"
         app:layout_constraintStart_toEndOf="@id/ivLogo"
@@ -56,14 +56,14 @@
                 android:layout_width="50dp"
                 android:layout_height="70dp"
                 android:layout_marginBottom="8dp"
-                android:contentDescription="@string/male"
+                android:contentDescription="@string/bmi_male"
                 android:src="@drawable/ic_male"
                 app:tint="@color/bmi_colorPrimary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/male"
+                android:text="@string/bmi_male"
                 android:textColor="@color/bmi_colorTextPrimary" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -89,7 +89,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="70dp"
-                android:contentDescription="@string/female"
+                android:contentDescription="@string/bmi_female"
                 android:src="@drawable/ic_female"
                 app:tint="@color/bmi_colorAccent" />
 
@@ -97,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/female"
+                android:text="@string/bmi_female"
                 android:textColor="@color/bmi_colorTextPrimary" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -279,7 +279,7 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/bmi_colorTextSecondary"
         android:text="@string/bmi_calculate"
-        android:textColor="@color/bmi_colorBackgroundTertiary"
+        android:textColor="@color/bmi_colorBackgroundPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

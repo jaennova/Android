@@ -10,27 +10,16 @@ import androidx.core.content.ContextCompat
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 import com.jaennova.begginerxml.R
+import com.jaennova.begginerxml.databinding.ActivityBmiCalculatorBinding
 import java.text.DecimalFormat
 
 class BMICalculatorActivity : AppCompatActivity() {
-
+    private lateinit var binding: ActivityBmiCalculatorBinding
     private var isMaleSelected: Boolean = true
     private var isFemaleSelected: Boolean = false
     private var currentWeight: Int = 70
     private var currentAge: Int = 30
     private var currentHeight: Int = 120
-
-    private lateinit var viewMale: CardView
-    private lateinit var viewFemale: CardView
-    private lateinit var tvHeight: TextView
-    private lateinit var rsHeight: RangeSlider
-    private lateinit var btnSubtractWeight: FloatingActionButton
-    private lateinit var btnPlusWeight: FloatingActionButton
-    private lateinit var tvWeight: TextView
-    private lateinit var btnSubtractAge: FloatingActionButton
-    private lateinit var btnPlusAge: FloatingActionButton
-    private lateinit var tvAge: TextView
-    private lateinit var btnCalculate: Button
 
     companion object {
         const val IMC_KEY = "IMC_RESULT"
@@ -38,57 +27,44 @@ class BMICalculatorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bmi_calculator)
-        initComponents()
+        binding = ActivityBmiCalculatorBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         initListeners()
         initUI()
     }
 
-    private fun initComponents() {
-        viewMale = findViewById(R.id.viewMale)
-        viewFemale = findViewById(R.id.viewFemale)
-        tvHeight = findViewById(R.id.tvHeight)
-        rsHeight = findViewById(R.id.rsHeight)
-        btnSubtractWeight = findViewById(R.id.btnSubtractWeight)
-        btnPlusWeight = findViewById(R.id.btnPlusWeight)
-        tvWeight = findViewById(R.id.tvWeight)
-        btnSubtractAge = findViewById(R.id.btnSubtractAge)
-        btnPlusAge = findViewById(R.id.btnPlusAge)
-        tvAge = findViewById(R.id.tvAge)
-        btnCalculate = findViewById(R.id.btnCalculate)
-    }
-
     private fun initListeners() {
-        viewMale.setOnClickListener {
+        binding.viewMale.setOnClickListener {
             changeGender()
             setGenderColor()
         }
-        viewFemale.setOnClickListener {
+        binding.viewFemale.setOnClickListener {
             changeGender()
             setGenderColor()
         }
-        rsHeight.addOnChangeListener { _, value, _ ->
+        binding.rsHeight.addOnChangeListener { _, value, _ ->
             val df = DecimalFormat("#.##")
             currentHeight = df.format(value).toInt()
-            tvHeight.text = "$currentHeight cm"
+            binding.tvHeight.text = "$currentHeight cm"
         }
-        btnPlusWeight.setOnClickListener {
+        binding.btnPlusWeight.setOnClickListener {
             currentWeight += 1
             setWeight()
         }
-        btnSubtractWeight.setOnClickListener {
+        binding.btnSubtractWeight.setOnClickListener {
             currentWeight -= 1
             setWeight()
         }
-        btnPlusAge.setOnClickListener {
+        binding.btnPlusAge.setOnClickListener {
             currentAge += 1
             setAge()
         }
-        btnSubtractAge.setOnClickListener {
+        binding.btnSubtractAge.setOnClickListener {
             currentAge -= 1
             setAge()
         }
-        btnCalculate.setOnClickListener {
+        binding.btnCalculate.setOnClickListener {
             val result = calculateIMC()
             navigateToResult(result)
         }
@@ -107,11 +83,11 @@ class BMICalculatorActivity : AppCompatActivity() {
     }
 
     private fun setAge() {
-        tvAge.text = currentAge.toString()
+        binding.tvAge.text = currentAge.toString()
     }
 
     private fun setWeight() {
-        tvWeight.text = currentWeight.toString()
+        binding.tvWeight.text = currentWeight.toString()
     }
 
     private fun changeGender() {
@@ -120,8 +96,8 @@ class BMICalculatorActivity : AppCompatActivity() {
     }
 
     private fun setGenderColor() {
-        viewMale.setCardBackgroundColor(getBackgroundColor(isMaleSelected))
-        viewFemale.setCardBackgroundColor(getBackgroundColor(isFemaleSelected))
+        binding.viewMale.setCardBackgroundColor(getBackgroundColor(isMaleSelected))
+        binding.viewFemale.setCardBackgroundColor(getBackgroundColor(isFemaleSelected))
     }
 
     private fun getBackgroundColor(isSelectedComponent: Boolean): Int {

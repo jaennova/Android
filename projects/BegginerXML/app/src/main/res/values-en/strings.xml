@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BegginerXML</string>
+    <!--To Do App-->
+    <string name="todo_app_title">To Do List</string>
+    <string name="todo_title_screen">Welcome, Jaen!</string>
+    <string name="todo_categories">Categories</string>
+    <string name="todo_tasks">Tasks</string>
+    <string name="fab_add_task">Add Task</string>
+    <string name="todo_add_task">Add Task</string>
+    <string name="todo_work">Work</string>
+    <string name="todo_personal">Personal</string>
+    <string name="todo_learning">Learning</string>
+    <string name="todo_shopping">Shopping</string>
+
+    <!--BMI Calculator-->
+    <string name="bmi_app_title">BMI Calculator</string>
+    <string name="bmi_female">Female</string>
+    <string name="bmi_male">Male</string>
+    <string name="bmi_height">Height</string>
+    <string name="bmi_initial_height">120 cm</string>
+    <string name="bmi_weight">Weight</string>
+    <string name="bmi_age">Age</string>
+    <string name="bmi_calculate">Calculate</string>
+    <string name="bmi_result">Result</string>
+    <string name="bmi_your_bmi">Your BMI is:</string>
+    <string name="bmi_result_detail">Diet and Nutrition</string>
+    <string name="bmi_recalculate">Recalculate</string>
+    <!-- BMI Categories -->
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Normal Weight</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obesity">Obesity</string>
+    <string name="bmi_error_category_invalid">Error: Invalid BMI</string>
+    <!-- BMI Recommendations -->
+    <string name="bmi_underweight_recomendation">
+Diet and Nutrition\nIncrease Caloric Intake:\n\t•\tConsume more calorie-rich foods like nuts, avocados, and healthy oils.\n\t•\tIncrease portion sizes during meals.\nChoose Nutrient-Dense Foods:\n\t•\tPrioritize foods rich in protein (lean meats, fish, eggs, legumes).\n\t•\tInclude complex carbohydrates (whole grains, sweet potatoes) for sustained energy.\n\t•\tEat plenty of fruits and vegetables for essential vitamins and minerals.
+</string>
+
+    <string name="bmi_normal_recomendation">
+Diet and Nutrition\nMaintain a Balanced Diet:\n\t•\tConsume a variety of foods from all food groups in appropriate proportions.\n\t•\tChoose lean protein options like chicken, turkey, fish, and tofu.\n\t•\tInclude a variety of carbohydrates, preferably whole grains, such as brown rice, quinoa, and whole wheat pasta.\n\t•\tEnsure you get enough healthy fats from sources like avocados, nuts, and olive oil.
+</string>
+
+    <string name="bmi_overweight_recomendation">
+Diet and Nutrition\nControl Portion Sizes:\n\t•\tReduce portion sizes to limit calorie intake.\n\t•\tOpt for low-calorie, nutrient-dense foods like fruits, vegetables, and lean proteins.\n\t•\tLimit consumption of processed foods and those high in saturated fats and added sugars.\nIncrease Physical Activity:\n\t•\tIncorporate regular exercise, such as walking, swimming, or playing sports.
+</string>
+
+    <string name="bmi_obesity_recomendation">
+Diet and Nutrition\nSet Realistic Goals:\n\t•\tSet achievable, short-term goals to improve your health.\n\t•\tTake a gradual approach to making changes in your eating habits and lifestyle.\n\t•\tSeek support from friends, family, or a healthcare professional to stay motivated.\nPrioritize Food Quality:\n\t•\tChoose whole, fresh foods over processed and calorie-rich options.
+</string>
+
+    <!-- Errors in recommendations -->
+    <string name="bmi_error_recommendation_unknown">Error: Unknown Recommendation</string>
+    <string name="bmi_recommendation_title">Recommendation</string>
+
+</resources>

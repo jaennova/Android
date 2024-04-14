@@ -4,6 +4,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.getString
 import androidx.recyclerview.widget.RecyclerView
 import com.jaennova.begginerxml.R
 
@@ -25,25 +26,25 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         itemView.setOnClickListener { onItemSelected(layoutPosition) }
         when (category) {
             TaskCategories.Work -> {
-                tvCategoryName.text = "Trabajo"
+                tvCategoryName.text = getString(itemView.context, R.string.todo_work)
                 divider.setBackgroundResource(R.color.todo_work)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_work))
             }
 
             TaskCategories.Personal -> {
-                tvCategoryName.text = "Personal"
+                tvCategoryName.text = getString(itemView.context, R.string.todo_personal)
                 divider.setBackgroundResource(R.color.todo_personal)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_personal))
             }
 
             TaskCategories.Shopping -> {
-                tvCategoryName.text = "Compras"
+                tvCategoryName.text = getString(itemView.context, R.string.todo_shopping)
                 divider.setBackgroundResource(R.color.todo_shopping)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_shopping))
             }
 
             TaskCategories.Learning -> {
-                tvCategoryName.text = "Aprender"
+                tvCategoryName.text = getString(itemView.context, R.string.todo_learning)
                 divider.setBackgroundResource(R.color.todo_learning)
 //                viewContainer.setCardBackgroundColor(viewContainer.context.getColor(R.color.todo_learning))
             }

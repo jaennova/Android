@@ -8,39 +8,26 @@ import androidx.cardview.widget.CardView
 import com.google.android.material.slider.RangeSlider
 import com.jaennova.begginerxml.R
 import com.jaennova.begginerxml.bmicalculator.BMICalculatorActivity.Companion.IMC_KEY
+import com.jaennova.begginerxml.databinding.ActivityBmiCalculatorResultBinding
 import kotlin.math.roundToInt
 
 class BmiCalculatorResultActivity : AppCompatActivity() {
-
-    private lateinit var tvResult: TextView
-    private lateinit var tvIMC: TextView
-    private lateinit var tvDescription: TextView
-    private lateinit var btnRecalculate: Button
-    private lateinit var viewRecommendation: CardView
-    private lateinit var rsBMIResult: RangeSlider
+    private lateinit var binding: ActivityBmiCalculatorResultBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bmi_calculator_result)
-
-        initComponents()
+        binding = ActivityBmiCalculatorResultBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         initUI()
         initListeners()
     }
 
-    private fun initComponents() {
-        tvIMC = findViewById(R.id.tvBMI)
-        tvResult = findViewById(R.id.tvBMIResult)
-        tvDescription = findViewById(R.id.tvBMIResulDetail)
-        btnRecalculate = findViewById(R.id.btnRecalculate)
-        viewRecommendation = findViewById(R.id.viewRecomendation)
-        rsBMIResult = findViewById(R.id.rsBMIResult)
-    }
 
     private fun initUI() {
         val result: Double = intent.extras?.getDouble(IMC_KEY) ?: -1.0
-        tvIMC.text = result.toString()
-        rsBMIResult.isEnabled = false
+        binding.tvBMIResult.text = result.toString()
+        binding.rsBMIResult.isEnabled = false
 
         val resultIMC = result.toFloat()
         configureRangeSlider(resultIMC)
@@ -48,7 +35,7 @@ class BmiCalculatorResultActivity : AppCompatActivity() {
     }
 
     private fun initListeners() {
-        btnRecalculate.setOnClickListener { onBackPressed() }
+        binding.btnRecalculate.setOnClickListener { onBackPressed() }
     }
 
     private fun configureRangeSlider(resultIMC: Float) {
@@ -57,17 +44,17 @@ class BmiCalculatorResultActivity : AppCompatActivity() {
         val rsStepSize = 0.1f
         val rsSetValue =
             ((resultIMC - rsMinValue) / rsStepSize).roundToInt() * rsStepSize + rsMinValue
-        rsBMIResult.valueFrom = rsMinValue
-        rsBMIResult.valueTo = rsMaxValue
-        rsBMIResult.stepSize = rsStepSize
-        rsBMIResult.values = listOf(rsSetValue)
+        binding.rsBMIResult.valueFrom = rsMinValue
+        binding.rsBMIResult.valueTo = rsMaxValue
+        binding.rsBMIResult.stepSize = rsStepSize
+        binding.rsBMIResult.values = listOf(rsSetValue)
     }
 
     private fun setResultBmi(result: Double) {
         val recommendationTextResId = getTitleResult(result)
         val descriptionTextResId = getDescriptionResult(result)
-        tvResult.text = getString(recommendationTextResId)
-        tvDescription.text = getString(descriptionTextResId)
+        binding.tvBMIResult.text = getString(recommendationTextResId)
+        binding.tvBMIResulDetail.text = getString(descriptionTextResId)
     }
 
     private fun getTitleResult(result: Double): Int {

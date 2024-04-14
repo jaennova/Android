@@ -63,7 +63,7 @@
         android:id="@+id/btnAddTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/todoPrimaryDark"
+        android:backgroundTint="@color/todoPrimary"
         android:text="@string/todo_add_task"
         android:textColor="@color/todoTextPrimary" />
 </LinearLayout>

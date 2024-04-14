@@ -56,10 +56,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="20dp"
-        android:backgroundTint="@color/todoPrimaryDark"
+        android:backgroundTint="@color/todoBackgroundPrimary"
         android:text="@string/fab_add_task"
-        android:textColor="@color/todoTextPrimary"
+        android:textColor="@color/todoTextSecondary"
         app:icon="@drawable/ic_add_task"
-        app:iconTint="@color/todoTextPrimary" />
+        app:iconTint="@color/todoTextSecondary" />
 
 </FrameLayout>

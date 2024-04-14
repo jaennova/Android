@@ -186,6 +186,21 @@ Una aplicación que calcula el Índice de Masa Corporal (IMC) de un usuario basa
 
 </details>
 
+- Crea la funcion initUI para inicializar los valores de los componentes
+
+<details>
+<summary>Codigo</summary>
+
+```kt
+    private fun initUI() {
+        setGenderColor()
+        setWeight()
+        setAge()
+    }
+```
+
+</details>
+
 - Dentro de la activity de resultado, inicializa las variables de los componentes
 
 <details>

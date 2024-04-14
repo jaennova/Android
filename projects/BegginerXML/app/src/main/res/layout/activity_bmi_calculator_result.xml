@@ -117,7 +117,7 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/bmi_colorTextSecondary"
         android:text="@string/bmi_recalculate"
-        android:textColor="@color/bmi_colorBackgroundTertiary"
+        android:textColor="@color/bmi_colorBackgroundPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
