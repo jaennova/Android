@@ -20,7 +20,7 @@
 6. **Crear Archivo de Recurso de Diseño:**
    - Crea un archivo de recursos de diseño (`item_superhero.xml`) para los elementos de la lista de los personajes.
 
-7. **Desarrollar Actividad de Detalle del Superhéroe:**
+7. **Crear la Activity de Detalle del Superhéroe:**
    - Crea una nueva actividad llamada `SuperheroDetailActivity.kt` para mostrar los detalles de cada superhéroe en el archivo XML correspondiente.
 
 8. **Diseñar Interfaz de Detalle del Superhéroe:**
