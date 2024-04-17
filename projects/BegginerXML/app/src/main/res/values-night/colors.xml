@@ -49,5 +49,5 @@
     <color name="bmi_colorBackgroundTertiary">#1A1A1A</color>
 
     <!--    Setting-->
-    <color name="settings_text_title">#000000</color>
+<!--    <color name="settings_text_title">#000000</color>-->
 </resources>

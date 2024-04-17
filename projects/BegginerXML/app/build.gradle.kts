@@ -44,6 +44,12 @@ dependencies {
     implementation(libs.material)
     //DataStore
     implementation (libs.androidx.datastore.preferences)
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    // Picasso
+    implementation(libs.picasso)
+
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)

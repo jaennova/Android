@@ -45,6 +45,14 @@
     <color name="bmi_colorBackgroundSecondary">#eaeaea</color>
     <color name="bmi_colorBackgroundTertiary">#c1c1c1</color>
 
-    <!--    Setting-->
-    <color name="settings_text_title">#000000</color>
+    <!--    SuperheroApp-->
+    <color name="superhero_item_name">#8B673AB7</color>
+    <color name="superhero_stat_intelligence">#00ff00</color>
+    <color name="superhero_stat_strength">#FF0000</color>
+    <color name="superhero_stat_speed">#E88B00</color>
+    <color name="superhero_stat_durability">#03A9F4</color>
+    <color name="superhero_stat_power">#FFEB3B</color>
+    <color name="superhero_stat_combat">#673AB7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 </resources>

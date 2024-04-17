@@ -15,4 +15,9 @@ val menuItems = listOf(
         R.drawable.ic_bmi_app,
         "Aplicación que calcula el Índice de Masa Corporal (IMC)"
     ),
+    MenuItem(
+        "Super Hero App",
+        R.drawable.ic_bmi_app,
+        "aplicacion que muestra una lista de super héroes"
+    ),
 )

@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jaennova.begginerxml.R
 import com.jaennova.begginerxml.bmicalculator.BMICalculatorActivity
+import com.jaennova.begginerxml.superheroapp.SuperHeroListActivity
 import com.jaennova.begginerxml.todolistapp.ToDoListActivity
 
 class MenuAdapter(private val context: Context, private val menuItems: List<MenuItem>) :
@@ -46,6 +47,7 @@ class MenuAdapter(private val context: Context, private val menuItems: List<Menu
             when (menuItem.title) {
                 "Todo List" -> openActivity(ToDoListActivity::class.java)
                 "BMI Calculator" -> openActivity(BMICalculatorActivity::class.java)
+                "Super Hero App" -> openActivity(SuperHeroListActivity::class.java)
             }
         }
 

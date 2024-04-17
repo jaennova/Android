@@ -17,7 +17,6 @@ import com.jaennova.begginerxml.databinding.ActivityToDoListBinding
 
 class ToDoListActivity : AppCompatActivity() {
 
-
     private lateinit var binding: ActivityToDoListBinding
     private lateinit var rvCategories: RecyclerView
     private lateinit var rvTasks: RecyclerView

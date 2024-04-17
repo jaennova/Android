@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Principiante XML</string>
+    <string name="app_name" translatable="false">Beginner XML</string>
 
     <!--To Do App-->
     <string name="todo_app_title">To Do List</string>
@@ -17,7 +17,7 @@
     <string name="bmi_app_title">BMI Calculator</string>
     <string name="bmi_female">Mujer</string>
     <string name="bmi_male">Hombre</string>
-    <string name="bmi_height">Altura</string>   
+    <string name="bmi_height">Altura</string>
     <string name="bmi_initial_height">120 cm</string>
     <string name="bmi_weight">Peso</string>
     <string name="bmi_age">Edad</string>
@@ -52,4 +52,12 @@
     <!-- Errores de recomendaciones -->
     <string name="bmi_error_recommendation_unknown">Error: Recomendación desconocida</string>
     <string name="bmi_recommendation_title">Recomendacion</string>
+
+    <!--Superhero App-->
+    <string name="intelligence">Inteligencia</string>
+    <string name="strength">Fuerza</string>
+    <string name="speed">Velocidad</string>
+    <string name="durability">Durabilidad</string>
+    <string name="power">Poder</string>
+    <string name="combat">Combate</string>
 </resources>

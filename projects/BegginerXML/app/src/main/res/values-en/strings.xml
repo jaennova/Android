@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BegginerXML</string>
     <!--To Do App-->
     <string name="todo_app_title">To Do List</string>
     <string name="todo_title_screen">Welcome, Jaen!</string>
@@ -53,4 +52,11 @@ Diet and Nutrition\nSet Realistic Goals:\n\t•\tSet achievable, short-term goal
     <string name="bmi_error_recommendation_unknown">Error: Unknown Recommendation</string>
     <string name="bmi_recommendation_title">Recommendation</string>
 
+    <!--Superhero App-->
+    <string name="intelligence">Intelligence</string>
+    <string name="strength">Strength</string>
+    <string name="speed">Speed</string>
+    <string name="durability">Durability</string>
+    <string name="power">Power</string>
+    <string name="combat">Combat</string>
 </resources>
