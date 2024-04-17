@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Beginner XML</string>
+    <string name="app_name" translatable="false">XML</string>
 
     <!--To Do App-->
     <string name="todo_app_title">To Do List</string>
